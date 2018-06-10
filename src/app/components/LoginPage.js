@@ -1,18 +1,54 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import Form from './Form';
 
-class LoginPage extends Component {
+  class LoginPage extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        email: '',
+        password: ''
+      };
+      this.onChange = this.onChange.bind(this);
+      this.onSubmit = this.onSubmit.bind(this); 
+    }
+ 
 
-  render() {
-    return (
-      <div>
-        <h1>Login Page</h1>
-        <h2>
-          <Link to="/main/1">Main Page</Link>
-        </h2>
-      </div>)
-  }
+onSubmit(e){
+
+  e.preventDefault();
+
+  const userData = {
+    email: this.state.email,
+    password: this.state.password
+  };
 }
 
+onChange(e){
+
+  this.setState({ [e.target.name]: e.target.value });
+
+}
+
+
+
+    render() {
+      return (
+
+<div>
+<h2 className="title"> <Link to="/main/1">Youtube List APP</Link></h2>
+
+
+< Form />
+
+</div>
+      );
+    }
+  }
+
+
+  
+
 export default LoginPage;
+
 
