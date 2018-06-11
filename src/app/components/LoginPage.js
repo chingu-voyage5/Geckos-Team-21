@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Form from './Form';
+import Submit from './Submit';
 
   class LoginPage extends Component {
     constructor(props) {
@@ -40,6 +41,7 @@ onChange(e){
 
 
 < Form />
+< Submit />
 
 </div>
       );
