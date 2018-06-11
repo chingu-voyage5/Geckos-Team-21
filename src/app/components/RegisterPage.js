@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import RegisterForm from './RegisterForm';
+import Submit from './Submit';
 
   class Register extends Component {
     constructor(props) {
@@ -38,6 +39,7 @@ onChange(e){
 <div>
 
 < RegisterForm />
+< Submit />
 <p>Do you have an account? <Link to="/">Login</Link></p>
 
 </div>
