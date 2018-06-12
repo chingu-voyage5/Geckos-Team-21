@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import MainPage from '../components/Main/MainPage';
 
 const App = () => (
-  <div>
+  <Fragment>
+    <CssBaseline />
     <MainPage />
-  </div>
+  </Fragment>
 );
 
 export default App;
