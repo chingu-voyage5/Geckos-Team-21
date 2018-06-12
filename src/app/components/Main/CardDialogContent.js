@@ -9,23 +9,26 @@ import Player from './Player';
 
 const styles = theme => ({
   root: {
-    paddingTop: 16,
-    paddingBottom: 16,
-    paddingLeft: 0,
-    paddingRight: 0,
-    margin: 0
+    // paddingTop: 16,
+    // paddingBottom: 16,
+    // paddingLeft: 0,
+    // paddingRight: 0,
+    // margin: 0
   },
   viewer: {
     display: 'flex',
     flexWrap: 'wrap',
-    maxWidth: '1900px',
-    margin: '0 auto'
+    maxWidth: '1920px',
+    maxHeight: '758px',
+    marginLeft: 'auto',
+    marginRight: 'auto'
   },
   viewerSelector: {
-    display: 'flex',
-    // flex: '1 1 30%',
     flex: '1 1 400px',
-    flexDirection: 'column'
+    overflow: 'auto'
+  },
+  player: {
+    flex: '2 1 1000px'
   }
 });
 
@@ -33,9 +36,51 @@ const CardDialogContent = ({ classes }) => {
   return (
     <div className={classes.root}>
       <div className={classes.viewer}>
-        <Player />
+        <div className={classes.player}>
+          <Player />
+        </div>
         <div className={classes.viewerSelector}>
-          <List>
+          <List component="nav" disablePadding={true}>
+            <ListItem button>
+              <ListItemText primary="Playlist item" secondary="Description" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemText primary="Playlist item" secondary="Description" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemText primary="Playlist item" secondary="Description" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemText primary="Playlist item" secondary="Description" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemText primary="Playlist item" secondary="Description" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemText primary="Playlist item" secondary="Description" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemText primary="Playlist item" secondary="Description" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemText primary="Playlist item" secondary="Description" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemText primary="Playlist item" secondary="Description" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemText primary="Playlist item" secondary="Description" />
+            </ListItem>
+            <Divider />
             <ListItem button>
               <ListItemText primary="Playlist item" secondary="Description" />
             </ListItem>
